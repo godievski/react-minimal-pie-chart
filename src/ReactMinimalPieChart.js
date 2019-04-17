@@ -139,6 +139,7 @@ function renderSegments(data, props, hide) {
 
     return (
       <Path
+        id={dataEntry.id || `pie-chart-${index}`}
         key={dataEntry.key || index}
         cx={props.cx}
         cy={props.cy}
